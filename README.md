@@ -16,10 +16,10 @@ To build the samples:
 
 ##CMake build
 
-mkdir cmake-build
-cd cmake-build
-cmake ..
-make VERBOSE=1
+    mkdir cmake-build
+    cd cmake-build
+    cmake ..
+    make VERBOSE=1
 
 The key points with the CMake build are that:
 - you have to tell CMake not to insert an rpath whenever a shared object is linked against,
@@ -27,11 +27,11 @@ The key points with the CMake build are that:
 
 ##Autotools/libtool build
 
-autoreconf -fi
-mkdir autotools-build
-cd autotools-build
-../configure
-make VERBOSE=1
+    autoreconf -fi
+    mkdir autotools-build
+    cd autotools-build
+    ../configure
+    make VERBOSE=1
 
 The key points with the autotools/libtool build are that:
 - for each library, both a static and a shared version are generated,
