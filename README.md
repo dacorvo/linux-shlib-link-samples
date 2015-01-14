@@ -4,7 +4,8 @@ Please refer to [this article](http://kaizou.org/2015/01/linux-libraries/) for a
 
 You can build the samples either using:
 - manually using the provided Makefile,
-- through CMake using the provided CMakeLists.txt
+- with CMake using the provided CMakeLists.txt
+- with Autotools using the provided configure.ac/Makefile.am 
 
 ##Manual build
 
