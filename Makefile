@@ -12,6 +12,9 @@ libbar.a: libfoo.so bar.o
 bar.o: bar.c
 	gcc -c bar.c
 
+libbaz.so: libbar.so baz.c
+	gcc -shared -o libbaz.so -fPIC baz.c -Wl,--copy-dt-needed-entries -lbar -L$(shell pwd)
+
 libbar.so: libfoo.so bar.c
 	gcc -shared -o libbar.so -fPIC bar.c -lfoo -L$(shell pwd)
 
